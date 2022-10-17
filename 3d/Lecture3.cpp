@@ -19,7 +19,7 @@ int main(void)
     glfwSetErrorCallback(error_callback);
     if (!glfwInit())
         exit(EXIT_FAILURE);
-    window = glfwCreateWindow(640, 480, "Simple example", NULL, NULL);
+    window = glfwCreateWindow(1280, 1280, "Simple example", NULL, NULL);
     if (!window)
     {
         glfwTerminate();
@@ -42,7 +42,7 @@ int main(void)
         glClear(GL_COLOR_BUFFER_BIT);
         glColor3f(0.0f, 0.0f, 1.0f);
 
-        double rad = 1;
+        double rad = 0.43;
         double x[360], y[360];
         glBegin(GL_LINE_STRIP);
         for (int i = 0; i < 360; i++)
